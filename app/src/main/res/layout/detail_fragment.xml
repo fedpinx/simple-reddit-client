@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    style="@style/ContainerLayout"
+    android:padding="@dimen/padding_small"
+    tools:context=".ui.fragment.DetailFragment">
+
+    <TextView
+        android:id="@+id/author"
+        style="@style/FullWidthLayout"
+        android:gravity="center"
+        android:textSize="@dimen/text_big"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0"
+        tools:text="Title" />
+
+    <ImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="@dimen/thumbnail_medium"
+        android:layout_height="@dimen/thumbnail_medium"
+        android:layout_marginTop="@dimen/margin_small"
+        android:contentDescription="@string/reddit_post_thumbnail"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_placeholder"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/author"
+        app:layout_constraintVertical_bias="0" />
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/FullWidthLayout"
+        android:layout_marginTop="@dimen/margin_small"
+        android:gravity="center"
+        android:textSize="@dimen/text_medium"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/thumbnail"
+        app:layout_constraintVertical_bias="0"
+        tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed ante eu enim commodo pretium. Donec ut rutrum leo. Mauris velit leo, dictum congue vehicula nec, rutrum eget eros." />
+</androidx.constraintlayout.widget.ConstraintLayout>

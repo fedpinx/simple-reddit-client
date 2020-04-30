@@ -15,7 +15,7 @@ class RedditRepository @Inject
 constructor(private val context: Context, private val redditService: RedditService) {
 
     fun getRedditTop(topMutableLiveData: MutableLiveData<RedditTop>) {
-        redditService.top.enqueue(object : Callback<RedditTop> {
+        redditService.getTop().enqueue(object : Callback<RedditTop> {
             override fun onResponse(call: Call<RedditTop>, response: Response<RedditTop>) {
                 if (response.isSuccessful) {
                     topMutableLiveData.postValue(response.body())

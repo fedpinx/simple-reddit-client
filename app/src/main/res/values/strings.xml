@@ -5,6 +5,13 @@
     <string name="dismiss_post">Dismiss Post</string>
     <string name="comments">%1$d comments</string>
     <string name="network_error">There was a network error, please retry.</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="save_thumbnail_dialog_title">Save thumbnail to device</string>
+    <string name="save_thumbnail_dialog_message">Are you sure you want to download this thumbnail
+        to device your?</string>
+    <string name="save_thumbnail_dialog_success">Thumbnail saved successfully as \'%1$s\'</string>
     <string name="right_arrow">Right arrow</string>
     <string name="dismiss_all">Dismiss all</string>
 </resources>

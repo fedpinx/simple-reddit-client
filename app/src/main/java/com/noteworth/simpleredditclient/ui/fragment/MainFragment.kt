@@ -1,5 +1,6 @@
 package com.noteworth.simpleredditclient.ui.fragment
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -12,9 +13,11 @@ import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.noteworth.simpleredditclient.R
+import com.noteworth.simpleredditclient.common.IntentKeys
 import com.noteworth.simpleredditclient.extension.fadeIn
 import com.noteworth.simpleredditclient.extension.fadeOut
 import com.noteworth.simpleredditclient.model.RedditPost
+import com.noteworth.simpleredditclient.ui.activity.DetailActivity
 import com.noteworth.simpleredditclient.ui.adapter.RedditPostsAdapter
 import com.noteworth.simpleredditclient.viewmodel.RedditViewModel
 import dagger.android.support.AndroidSupportInjection
@@ -91,7 +94,9 @@ class MainFragment : Fragment(), SwipeRefreshLayout.OnRefreshListener {
     }
 
     private fun startRedditPostDetail(redditPost: RedditPost) {
-        // TODO Reddit Post Detail Screen
+        val intent = Intent(requireActivity(), DetailActivity::class.java)
+        intent.putExtra(IntentKeys.EXTRA_REDDIT_POST, redditPost)
+        startActivity(intent)
     }
 
     override fun onRefresh() {
