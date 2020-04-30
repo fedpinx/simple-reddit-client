@@ -1,6 +1,6 @@
 package com.noteworth.simpleredditclient.di
 
-import com.noteworth.simpleredditclient.ui.fragment.ui.main.MainFragment
+import com.noteworth.simpleredditclient.ui.fragment.MainFragment
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 

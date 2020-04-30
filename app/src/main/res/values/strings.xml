@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Simple Reddit Client</string>
+
+    <string name="reddit_post_thumbnail">Reddit Post Thumbnail</string>
+    <string name="dismiss_post">Dismiss Post</string>
+    <string name="comments">%1$d comments</string>
+    <string name="network_error">There was a network error, please retry.</string>
+    <string name="right_arrow">Right arrow</string>
+    <string name="dismiss_all">Dismiss all</string>
 </resources>
